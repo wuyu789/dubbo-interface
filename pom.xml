@@ -12,7 +12,14 @@
         <module>gmall-interface</module>
         <module>user-service-provider</module>
         <module>order-service-comsumer</module>
+        <module>boot-user-service-provider</module>
+        <module>boot-order-service-comsumer</module>
     </modules>
 
-
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.0.4.RELEASE</version>
+        <relativePath /> <!-- lookup parent from repository -->
+    </parent>
 </project>

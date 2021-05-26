@@ -22,7 +22,7 @@
 		<dubbo:method name="getUserAddressList" timeout="1000"></dubbo:method>
 	</dubbo:service>
 
-	<bean id="userServiceImpl" class="com.wuyu.dubbo.service.impl.UserServiceImpl"></bean>
+	<bean id="userServiceImpl" class="com.wuyu.dubbo.service.UserServiceImpl"></bean>
 
 	<dubbo:monitor protocol="registry"></dubbo:monitor>
 </beans>
