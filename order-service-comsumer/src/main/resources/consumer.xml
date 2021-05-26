@@ -15,11 +15,16 @@
 	<dubbo:registry address="zookeeper://127.0.0.1:2181"></dubbo:registry>
 
 	<dubbo:reference interface="com.wuyu.dubbo.service.UserService"
-		id="userService" timeout="5000">
+		id="userService">
 		<!-- <dubbo:method name="getUserAddressList" timeout="1000"></dubbo:method> -->
 	</dubbo:reference>
 
-	<dubbo:consumer check="false"></dubbo:consumer>
+	<!--
+	    timeout :默认是1000ms
+	    1)、精确优先(方法级优先，接口级次之，全局配置再次之)
+	    2）、消费者设置优先(如果级别一样，则消费者优先，提供者次之)
+	  -->
+	<dubbo:consumer check="false" timeout="5000"></dubbo:consumer>
 
 	<dubbo:monitor protocol="registry"></dubbo:monitor>
 </beans>
