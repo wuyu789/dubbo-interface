@@ -7,7 +7,7 @@ import com.wuyu.dubbo.service.UserService;
 import java.util.Arrays;
 import java.util.List;
 
-@Service
+@Service   // 暴露服务
 public class UserServiceImpl implements UserService {
 
     @Override
