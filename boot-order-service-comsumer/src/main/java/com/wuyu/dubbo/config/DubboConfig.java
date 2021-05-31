@@ -25,12 +25,12 @@ public class DubboConfig {
         return registryConfig;
     }
 
-    @Bean
-    public MonitorConfig monitorConfig() {
-        MonitorConfig monitorConfig = new MonitorConfig();
-        monitorConfig.setProtocol("registry");
-        return monitorConfig;
-    }
+//    @Bean
+//    public MonitorConfig monitorConfig() {
+//        MonitorConfig monitorConfig = new MonitorConfig();
+//        monitorConfig.setProtocol("registry");
+//        return monitorConfig;
+//    }
 
     @Bean
     public ConsumerConfig consumerConfig() {
