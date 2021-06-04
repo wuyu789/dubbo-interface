@@ -11,5 +11,11 @@
 
     <artifactId>gmall-interface</artifactId>
 
-
+    <dependencies>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>dubbo</artifactId>
+            <version>2.6.2</version>
+        </dependency>
+    </dependencies>
 </project>
