@@ -26,5 +26,6 @@
 	  -->
 	<dubbo:consumer check="false" timeout="5000"></dubbo:consumer>
 
+	<!-- 连接监控中心 -->
 	<dubbo:monitor protocol="registry"></dubbo:monitor>
 </beans>
