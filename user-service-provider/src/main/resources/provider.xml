@@ -15,7 +15,8 @@
 	
 	<!-- 3、指定通信规则（通信协议？通信端口） -->
 	<dubbo:protocol name="dubbo" port="20882"></dubbo:protocol>
-	
+
+
 	<!-- 4、暴露服务   ref：指向服务的真正的实现对象 -->
 	<dubbo:service interface="com.wuyu.dubbo.service.UserService"
 		ref="userServiceImpl">
