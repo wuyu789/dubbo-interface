@@ -8,6 +8,7 @@ public class MainApplication {
 	
 	@SuppressWarnings("resource")
 	public static void main(String[] args) throws IOException {
+		System.out.println("UserService------------"+1);
 		ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("consumer.xml");
 		
 		OrderService orderService = applicationContext.getBean(OrderService.class);
